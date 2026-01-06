@@ -1,0 +1,9 @@
+public enum StatusTopico {
+    NAO_RESPONDIDO,
+    RESPONDIDO,
+    SOLUCIONADO,
+    FECHADO
+}
+
+@Enumerated(EnumType.STRING)
+private StatusTopico status = StatusTopico.NAO_RESPONDIDO;
