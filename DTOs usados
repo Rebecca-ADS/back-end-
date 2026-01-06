@@ -1,0 +1,2 @@
+public record LoginDTO(String email, String senha) {}
+public record TokenDTO(String token) {}
