@@ -1,0 +1,16 @@
+Visão Geral do Fluxo
+
+1️ Usuário faz login com email e senha
+2️ API valida as credenciais
+3️ Se estiver tudo certo → gera um JWT
+4️ O token é retornado ao cliente
+5️ O cliente envia esse token no Authorization Header
+6️ A API valida o token antes de permitir acesso aos endpoints protegidos
+
+ Estrutura de Pacotes (sugestão)
+security/
+ ├── AutenticacaoService.java
+ ├── AutenticacaoController.java
+ ├── TokenService.java
+ ├── SecurityConfigurations.java
+ ├── FiltroToken.java
