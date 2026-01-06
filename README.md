@@ -3,27 +3,27 @@ O objetivo do projeto é criar uma API REST responsável por gerenciar tópicos 
 
 A aplicação permite que usuários autenticados criem, visualizem, editem e excluam tópicos, garantindo regras de segurança e controle de acesso.
 
-🚀 Funcionalidades
+Funcionalidades
 
-✅ Cadastro e autenticação de usuários
+Cadastro e autenticação de usuários
 
-✅ Geração de token JWT
+Geração de token JWT
 
-✅ Criação de tópicos
+Criação de tópicos
 
-✅ Listagem de tópicos
+Listagem de tópicos
 
-✅ Detalhamento de tópico por ID
+Detalhamento de tópico por ID
 
-✅ Atualização de tópico (somente pelo autor)
+Atualização de tópico (somente pelo autor)
 
-✅ Exclusão de tópico (somente pelo autor)
+Exclusão de tópico (somente pelo autor)
 
-✅ Validação de dados
+Validação de dados
 
-✅ Controle de acesso por autenticação
+Controle de acesso por autenticação
 
-🧠 Regras de Negócio
+Regras de Negócio
 
 Apenas usuários autenticados podem criar, editar ou excluir tópicos.
 
@@ -35,7 +35,7 @@ A data de criação do tópico é gerada automaticamente pelo sistema.
 
 Endpoints protegidos exigem Bearer Token (JWT).
 
-🔐 Autenticação
+Autenticação
 
 A autenticação é realizada via JWT (JSON Web Token).
 
@@ -45,8 +45,8 @@ Authorization: Bearer SEU_TOKEN_AQUI
 
 O token é gerado após o login do usuário e deve ser enviado em todas as requisições protegidas.
 
-📂 Endpoints Principais
-🔹 Criar Tópico
+Endpoints Principais
+Criar Tópico
 
 POST /topicos
 
@@ -56,15 +56,15 @@ POST /topicos
   "curso": "Java"
 }
 
-🔹 Listar Todos os Tópicos
+ Listar Todos os Tópicos
 
 GET /topicos
 
-🔹 Buscar Tópico por ID
+ Buscar Tópico por ID
 
 GET /topicos/{id}
 
-🔹 Atualizar Tópico
+ Atualizar Tópico
 
 PUT /topicos/{id}
 
@@ -74,11 +74,11 @@ PUT /topicos/{id}
   "curso": "Java"
 }
 
-🔹 Excluir Tópico
+ Excluir Tópico
 
 DELETE /topicos/{id}
 
-🧰 Tecnologias Utilizadas
+ Tecnologias Utilizadas
 
 Java
 
@@ -96,7 +96,7 @@ Maven
 
 Insomnia (para testes de API)
 
-🗂️ Organização do Projeto
+ Organização do Projeto
 
 controller → Camada de controle das requisições
 
@@ -108,7 +108,7 @@ model → Entidades
 
 security → Configurações de autenticação e autorização
 
-📘 Documentação e Organização
+ Documentação e Organização
 
 O projeto foi desenvolvido seguindo as orientações do Trello do desafio, que contém:
 
@@ -118,7 +118,7 @@ Regras de negócio
 
 Requisitos obrigatórios e extras
 
-🤝 Comunidade
+ Comunidade
 
 A troca de conhecimento faz parte do processo!
 Utilize o Discord do programa para:
@@ -129,7 +129,7 @@ Compartilhar soluções
 
 Ajudar outros participantes
 
-✨ Considerações Finais
+ Considerações Finais
 
 Este projeto consolida conhecimentos importantes sobre:
 
