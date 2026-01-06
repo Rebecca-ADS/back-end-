@@ -1,0 +1,61 @@
+package br.com.forumhub.model;
+
+import jakarta.persistence.*;
+import java.time.LocalDateTime;
+
+@Entity
+@Table(name = "topicos")
+public class Topico {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String titulo;
+
+    @Column(columnDefinition = "TEXT")
+    private String mensagem;
+
+    private String curso;
+
+    private LocalDateTime dataCriacao = LocalDateTime.now();
+
+    @ManyToOne
+    @JoinColumn(name = "autor_id")
+    private Usuario autor;
+
+    public Topico() {}
+
+    public Topico(String titulo, String mensagem, String curso, Usuario autor) {
+        this.titulo = titulo;
+        this.mensagem = mensagem;
+        this.curso = curso;
+        this.autor = autor;
+        this.dataCriacao = LocalDateTime.now();
+    }
+
+    // Getters
+    public Long getId() {
+        return id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getMensagem() {
+        return mensagem;
+    }
+
+    public String getCurso() {
+        return curso;
+    }
+
+    public LocalDateTime getDataCriacao() {
+        return dataCriacao;
+    }
+
+    public Usuario getAutor() {
+        return autor;
+    }
+}
